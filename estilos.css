@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+*{
+  margin: 0;
+}
 .contenedor {
   font-family: "Inter", Arial;
 }
@@ -34,7 +37,7 @@ a:hover {
   color: #f6f8ff;
 }
 img {
-    max-width: min-content;
+    max-width: 300px;
 }
 .perfil {
     display: flex;
