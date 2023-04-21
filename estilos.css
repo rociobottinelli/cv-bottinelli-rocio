@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-*{
+* {
   margin: 0;
 }
+
 .contenedor {
   font-family: "Inter", Arial;
 }
-nav {
+input {
+  display: none;
+}
+label {
+  display: none;
+}
+
+nav ul {
   height: 80px;
   background-color: #b2bde4;
   display: flex;
@@ -14,7 +22,10 @@ nav {
   align-items: center;
   padding-right: 40px;
 }
-a {
+nav ul li {
+  list-style-type: none;
+}
+li a {
   font-size: 24px;
   text-decoration: none;
   color: #233e9e;
@@ -32,6 +43,7 @@ a:hover {
   align-items: center;
   position: absolute;
   bottom: 0;
+  margin-top: 40px;
 }
 .text-footer {
   font-size: 20px;
@@ -39,68 +51,71 @@ a:hover {
   margin-right: 20px;
 }
 img {
-    max-width: 300px;
+  max-width: 300px;
 }
 .perfil {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
 }
 h1 {
-text-align: center;
-color: #0C1E5B;
-font-size: 40px;
-font-weight: 500;
-padding: 30px;
+  text-align: center;
+  color: #0c1e5b;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 30px;
 }
 .perfil {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
 .mis-datos {
-    width: 70%;
+  width: 70%;
 }
-h2{
-  color: #0C1E5B;
+h2 {
+  color: #0c1e5b;
   font-weight: 500;
   font-size: 36px;
   text-align: center;
   padding-top: 20px;
-
 }
 .pagina-seleccionada {
   color: #f6f8ff;
 }
-.a_linkedin:hover{
-  color: #0C1E5B;
+.a_linkedin:hover {
+  color: #0c1e5b;
 }
-.a_mail:hover{
-  color: #0C1E5B;
+.a_mail:hover {
+  color: #0c1e5b;
 }
-.a_linkedin, .a_mail{
+.a_linkedin,
+.a_mail {
   font-size: 20px;
 }
 
 /* Index Styles*/
-.sobre-mi, .contacto{
+.sobre-mi,
+.contacto {
   font-weight: 400;
   font-size: 32px;
-  color: #0C1E5B;
+  color: #0c1e5b;
   padding-bottom: 10px;
 }
-.correo, .linkedin, .ubicacion{
+.correo,
+.linkedin,
+.ubicacion {
   line-height: 40px;
   font-size: 20px;
 }
-.paragraph-sobre-mi{
+.paragraph-sobre-mi {
   line-height: 30px;
   font-size: 20px;
 }
-.div-contacto{
+.div-contacto {
   padding-top: 30px;
 }
-.mis-datos{
+.mis-datos {
   max-width: 50%;
 }
 
@@ -112,10 +127,10 @@ h2{
 .estudios-titulo {
   font-weight: 400;
   font-size: 32px;
-  color: #0C1E5B;
+  color: #0c1e5b;
   padding-bottom: 10px;
 }
-.estudios p{
+.estudios p {
   font-size: 20px;
 }
 
@@ -125,7 +140,7 @@ h2{
   font-weight: 500;
   padding-top: 10px;
 }
-.div-idioma{
+.div-idioma {
   font-size: 20px;
   color: black;
   padding-top: 20px;
@@ -135,3 +150,79 @@ h2{
   font-weight: 500;
 }
 
+@media all and (max-width: 700px) {
+  input:checked ~ ul {
+    display: block;
+  }
+
+  input:checked ~ label {
+    background: white;
+    color: #0c1e5b;
+  }
+
+  label:hover {
+    background: #0c1e5b;
+  }
+
+  li {
+    margin: 0px;
+    text-align: left;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    color: white;
+    background-color: #b2bde4;
+  }
+
+ .navbar {
+    display: none;
+    height: min-content;
+    padding: 15px;
+    position:relative;
+  }
+
+nav {
+  background-color:#b2bde4;
+  padding: 15px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+.perfil {
+  flex-direction: column;
+  align-items: center;
+}
+.footer{
+  position: relative;
+  margin-top: 50px;
+}
+.mis-datos{
+  width: 100%;
+}
+img {
+  max-width: 200px;
+}
+.perfil-foto{
+  text-align: center;
+}
+.mis-datos {
+  max-width: 90%;
+}
+.text-footer {
+  font-size: 15px;
+}
+}
+@media all and (max-width: 860px) {
+  .footer-estudios{
+    position: relative;
+  }}

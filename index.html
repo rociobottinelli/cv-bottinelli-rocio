@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,19 @@
 <body>
     <section class="contenedor">
         <nav>
-            <a class="pagina-seleccionada" href="index.html">Inicio</a>
-            <a href="./estudios.html">Estudios</a>
-            <a href="./conocimientos.html">Conocimientos</a>
-            <a href="./experiencia.html">Experiencia</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul class="navbar">
+                <li><a class="pagina-seleccionada" href="index.html">Inicio</a></li>
+                <li> <a href="./estudios.html">Estudios</a></li>
+                <li> <a href="./conocimientos.html">Conocimientos</a></li>
+                <li> <a href="./experiencia.html">Experiencia</a></li>
+            </ul>
         </nav>
         <div class="content">
             <h1>Curriculum Vitae</h1>
             <div class="perfil">
-                <div>
+                <div class="perfil-foto">
                     <img src="./assets/images/profile-cv-pic.png" alt="Foto Curriculum">
                     <h2>Rocio Bottinelli</h2>
                 </div>
@@ -33,9 +38,12 @@
                     <div class="div-contacto">
                         <h3 class="contacto"> Contacto
                         </h3>
-                        <p class="correo"><strong>Correo:</strong> <a class="a_mail" href="mailto:rociobottinelli@gmail.com">rociobottinelli@gmail.com</a>
+                        <p class="correo"><strong>Correo:</strong> <a class="a_mail"
+                                href="mailto:rociobottinelli@gmail.com">rociobottinelli@gmail.com</a>
                         </p>
-                        <p class="linkedin"><strong> Linkedin:</strong><a class="a_linkedin" href="https://www.linkedin.com/in/rociobottinelli/" target="_blank"> /rociobottinelli</a></p>
+                        <p class="linkedin"><strong> Linkedin:</strong><a class="a_linkedin"
+                                href="https://www.linkedin.com/in/rociobottinelli/" target="_blank">
+                                /rociobottinelli</a></p>
                         <p class="ubicacion"><strong>Ubicación: </strong>Buenos Aires, Argentina</p>
                     </div>
                 </div>
