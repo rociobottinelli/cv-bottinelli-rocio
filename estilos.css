@@ -5,7 +5,6 @@
 .contenedor {
   font-family: "Inter", Arial;
 }
-
 nav {
   height: 80px;
   background-color: #b2bde4;
@@ -27,14 +26,17 @@ a:hover {
 .footer {
   background-color: #3f5298;
   height: 54px;
+  width: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-right: 40px;
+  position: absolute;
+  bottom: 0;
 }
 .text-footer {
   font-size: 20px;
   color: #f6f8ff;
+  margin-right: 20px;
 }
 img {
     max-width: 300px;
@@ -42,15 +44,94 @@ img {
 .perfil {
     display: flex;
     flex-direction: column;
+    margin: 0 10%;
 }
 h1 {
 text-align: center;
+color: #0C1E5B;
+font-size: 40px;
+font-weight: 500;
+padding: 30px;
 }
 .perfil {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 100px;
 }
 .mis-datos {
     width: 70%;
 }
+h2{
+  color: #0C1E5B;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+.pagina-seleccionada {
+  color: #f6f8ff;
+}
+.a_linkedin:hover{
+  color: #0C1E5B;
+}
+.a_mail:hover{
+  color: #0C1E5B;
+}
+.a_linkedin, .a_mail{
+  font-size: 20px;
+}
+
+/* Index Styles*/
+.sobre-mi, .contacto{
+  font-weight: 400;
+  font-size: 32px;
+  color: #0C1E5B;
+  padding-bottom: 10px;
+}
+.correo, .linkedin, .ubicacion{
+  line-height: 40px;
+  font-size: 20px;
+}
+.paragraph-sobre-mi{
+  line-height: 30px;
+  font-size: 20px;
+}
+.div-contacto{
+  padding-top: 30px;
+}
+.mis-datos{
+  max-width: 50%;
+}
+
+/* Estudios Style */
+
+.estudios > div {
+  padding-top: 20px;
+}
+.estudios-titulo {
+  font-weight: 400;
+  font-size: 32px;
+  color: #0C1E5B;
+  padding-bottom: 10px;
+}
+.estudios p{
+  font-size: 20px;
+}
+
+/* Conocimientos Style */
+.list-conocimientos li {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.div-idioma{
+  font-size: 20px;
+  color: black;
+  padding-top: 20px;
+  line-height: 30px;
+}
+.div-idioma p {
+  font-weight: 500;
+}
+
